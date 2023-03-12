@@ -19,7 +19,7 @@ class Activity:
     """
 
     def __init__(self, activity_id, start_time, end_time, capacity_used=0, family_assigned=None, capacity_left=math.inf,
-                 location='default'):
+                 location='room 1'):
         if family_assigned is None:
             family_assigned = []
         self.family_assigned = family_assigned
