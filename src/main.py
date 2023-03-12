@@ -1,16 +1,12 @@
-# This is a sample Python script.
-
-# Press Shift+F10 to execute it or replace it with your code.
-# Press Double Shift to search everywhere for classes, files, tool windows, actions, and settings.
-
-
-def print_hi(name):
-    # Use a breakpoint in the code line below to debug your script.
-    print(f'Hi, {name}')  # Press Ctrl+F8 to toggle the breakpoint.
-
+from classes_needed import *
 
 # Press the green button in the gutter to run the script.
 if __name__ == '__main__':
-    print_hi('PyCharm')
+    family = Family(2, 2, 2)
+    family_2 = Family(4, 1, 3)
 
-# See PyCharm help at https://www.jetbrains.com/help/pycharm/
+    activity_1 = Activity(1)
+    activity_1.assign_family(family)
+    activity_1.assign_family(family_2)
+
+    activity_1.assignment_list()
